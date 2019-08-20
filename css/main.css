@@ -10,7 +10,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+div {
 
+
+  }
+
+}
 html {
   color: #222;
   font-size: 1em;
@@ -97,6 +102,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.button {
+   width: 500px;
+   height: 500px;
+   border: 0px solid #333;
+   box-shadow: 8px 8px 5px #444;
+   padding: 8px 12px;
+
+   #cvbutton {
+     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+   }
+
+   #aboutbutton {
+     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+   }
+
+   #projbutton {
+     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+   }
+
+   #pedbutton {
+     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+   }
 
 /* ==========================================================================
    Helper classes

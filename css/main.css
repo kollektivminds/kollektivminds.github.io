@@ -2,7 +2,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 header, footer {
-  height: 100px;
+  height: 40px;
   background-color: #0d0d0d;
   color: #ffffff;
   vertical-align: bottom;
@@ -13,6 +13,14 @@ header {
   text-align: center;
 }
 
+footer {
+  display: block;
+  position : absolute;
+  bottom : 0;
+  height : 80px;
+  width: 100%;
+  margin-top : 40px;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -99,8 +107,7 @@ textarea {
    }
 
 img {
-  height: 10%;
-  width: 10%; 
+
 }
 /* The side navigation menu */
 .sidenav {

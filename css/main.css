@@ -1,25 +1,73 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+a href {
+
+}
+
+div {
+
+}
+
 header, footer {
-  height: 40px;
-  background-color: #0d0d0d;
-  color: #ffffff;
+  display: inline-block;
+  background-color: #818181;
+  color: #000000;
+  width: 100%;
   vertical-align: bottom;
   line-height: normal;
 }
 
 header {
+  height: 40px;
   text-align: center;
+  font: xx-large bold;
+  margin-bottom: 10px;
 }
 
 footer {
-  display: block;
   position : absolute;
   bottom : 0;
-  height : 80px;
-  width: 100%;
-  margin-top : 40px;
+  height : 55px;
+  margin-top : 20px;
+}
+
+img {
+  border-radius: 10%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  /* Keyword values */
+  table-layout: fixed;
+  height: auto;
+  width: auto;
+  align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+
+  /* Global values */
+  table-layout: inherit;
+  table-layout: initial;
+  table-layout: unset;
 }
 
 /*
@@ -42,56 +90,6 @@ footer {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
-
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-*/
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -99,16 +97,25 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-* {
-  box-sizing: border-box;
-   }
+/*
+ * Custom styles
+ */
 
-img {
-
+/*
+ * Contact icons
+ */
+.icon{
+  height: 32px;
+  width: 32px;
+  border-radius: 25%;
 }
+
+/* Style page content */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -117,7 +124,7 @@ img {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #e6e6e6;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -147,68 +154,12 @@ img {
   margin-left: 50px;
 }
 
-/* Style page content */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
-/* Buttons */
-.button {
-   width: 100%;
-   height: 50%;
-   border: black 10px double;
-   background-clip: content-box;
-   box-shadow: 0px 0px 0px #888;
-   padding: 2px 2px;
-   text-align: center;
-   vertical-align: middle;
- }
-
-
-  #cvbutton {
-     background-image: linear-gradient(45deg, #fff, #ddd 20%, #ccc);
-     float: none;
-     border-top-right-radius: 0%;
-   }
-
-   #aboutbutton {
-     background-image: linear-gradient(315deg, #fff, #ddd 20%, #ccc);
-     float: none; border-top-left-radius: 0%;
-   }
-
-   #projbutton {
-     background-image: linear-gradient(225deg, #fff, #ddd 20%, #ccc);
-     float: none;
-     border-bottom-left-radius: 0%;
-   }
-
-   #pedbutton {
-     background-image: linear-gradient(135deg, #fff, #ddd 20%, #ccc);
-     float: none;
-     border-bottom-right-radius: 0%;
-   }
-
-   table {
-     /* Keyword values */
-     table-layout: fixed;
-     height: auto;
-     width: auto;
-     align: center;
-     vertical-align: middle;
-     margin: 0 auto;
-
-     /* Global values */
-     table-layout: inherit;
-     table-layout: initial;
-     table-layout: unset;
-   }
 
 /* ==========================================================================
    Helper classes
@@ -266,18 +217,19 @@ img {
 }
 
 /*
-* Hide visually and from screen readers, but maintain layout
-*/
+ *  Hide visually and from screen readers, but maintain layout
+ */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
-* Clearfix: contain floats
-*
+ *  Clearfix: contain floats
+ *
 * For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
+*
+1. The space content is one way to avoid an Opera bug when the
 *    `contenteditable` attribute is included anywhere else in the document.
 *    Otherwise it causes space to appear at the top and bottom of elements
 *    that receive the `clearfix` class.
@@ -314,11 +266,9 @@ img {
   /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/*
+ *  Print styles.
+ */
 
 @media print {
   *,

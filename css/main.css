@@ -39,23 +39,34 @@ div {
 }
 
 .main {
-  width: 98%;
+  width: 100%;
+  align-content: center;
   height: 100%;
 }
 
 #id {
-  position: absolute; 
+  position: absolute;
 }
 
-header, footer {
-  display: inline-block;
-  background-color: #818181;
-  color: #000000;
+.headfoot {
+  text-align: center;
+  font-size: 36px;
+  background-color: #ffffff;
+  color: #ff5722;
+  height: 40px;
   width: 100%;
-  vertical-align: bottom;
   line-height: normal;
   position: -webkit-sticky;
   position: sticky;
+}
+
+#header {
+
+}
+
+#footer {
+  text-align: right;
+  font-size: 12px;
 }
 
 header {
@@ -75,6 +86,7 @@ footer {
 
 img {
   border-radius: 10%;
+  padding: 10px; 
 }
 
 hr {
@@ -107,6 +119,10 @@ table {
   table-layout: unset;
 }
 
+  #rights {
+    text-align: right;
+    vertical-align: bottom;
+  }
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -161,9 +177,9 @@ table {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #e6e6e6;
+  background-color: #607d8b;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 50px; /* Place content 50px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -172,7 +188,7 @@ table {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #ff5722;
   display: block;
   transition: 0.3s;
 }

@@ -9,8 +9,42 @@ a href {
 
 }
 
+button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
 div {
 
+}
+
+.column {
+  float: left;
+}
+
+.menu {
+  width: 2%;
+  height: 100%;
+}
+
+.main {
+  width: 98%;
+  height: 100%;
+}
+
+#id {
+  position: absolute; 
 }
 
 header, footer {
@@ -20,6 +54,8 @@ header, footer {
   width: 100%;
   vertical-align: bottom;
   line-height: normal;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 header {
@@ -27,13 +63,14 @@ header {
   text-align: center;
   font: xx-large bold;
   margin-bottom: 10px;
+  top: 20px;
 }
 
 footer {
-  position : absolute;
-  bottom : 0;
-  height : 55px;
-  margin-top : 20px;
+  top: 10px;
+  bottom: 20px;
+  height: 55px;
+  margin-top : 0px;
 }
 
 img {

@@ -1,20 +1,16 @@
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* 
+ * 
+ * Base styles 
+ * 
+ */
 
 html {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 1em;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
  * Customize the background color to match your design.
  */
 
@@ -28,9 +24,7 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
+/* A better looking default horizontal rule */
 
 hr {
   display: block;
@@ -41,11 +35,7 @@ hr {
   padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+/* Remove the gap between media and the bottom of their containers */
 
 audio,
 canvas,
@@ -56,9 +46,7 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
+/* Remove default fieldset styles. */
 
 fieldset {
   border: 0;
@@ -66,33 +54,108 @@ fieldset {
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
+/* Allow only vertical resizing of textareas. */
 
 textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* 
+ * 
+ * Custom styles
+ *  
+ */
 
- /* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 5em; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #ffffff; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+/* 
+ * Index styles 
+ */
+
+ .index-group {
+  display: flex;  
+  flex-direction: row; 
+  /* justify-content: center;  */
+  /* margin: auto;  */
+ }
+
+ .index-container {
+  order: 1; 
+  width: 80%; 
+  height: 60%;
+  vertical-align: middle; 
+  display: flex; 
+  flex-direction: column;
+  float: center;
+  /* flex-grow: 1;  */
+  text-align: center; 
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25%;
+  /* margin-bottom: 15%;  */
+  align-items: stretch;
 }
 
-/* The navigation menu links */
+#index-pic { 
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+  padding: 2%;
+} 
+
+.index-head {
+  justify-content: center; 
+  vertical-align: middle;
+  flex-direction: column; 
+  height: 100%;
+} 
+
+.index-intro p {
+  width: 100%; 
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.index-intro a {
+  width: 100%; 
+  text-align: center;
+}
+
+.index-blog-line { 
+  order: 2; 
+  flex: none; 
+  }
+
+.index-blog-line p { 
+  text-align: center;
+}
+
+ /* 
+  * The side navigation menu 
+  */
+
+.sidenav {
+  /* 100% Full-height */
+  height: 100%; 
+  /* 0 width - change this with JavaScript */
+  width: 5em; 
+  /* Stay in place */
+  position: fixed; 
+  /* Stay on top */
+  z-index: 1; 
+  /* Stay at the top */
+  top: 0; 
+  left: 0;
+  /* Black*/
+  background-color: #ffffff; 
+  /* Disable horizontal scroll */
+  overflow-x: hidden; 
+  /* Place content 60px from the top */
+  padding-top: 60px; 
+  /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.5s; 
+}
+
+/* Navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 24px;
   text-decoration: none;
@@ -129,10 +192,11 @@ textarea {
   .sidenav a {font-size: 18px;}
 }
 
-/* Social media buttons */
+/* 
+ * Social media buttons 
+ */
 
 .social-media-buttons {
-  float: left;
   display: inline-block;
 }
 
@@ -147,12 +211,6 @@ textarea {
 #cv {
   padding-left: 1.5em;
 }
-
-#index-main, #div {
-  display: inline-block
-}
-
-
 
 /* ==========================================================================
    Helper classes
@@ -236,11 +294,7 @@ textarea {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/*  */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

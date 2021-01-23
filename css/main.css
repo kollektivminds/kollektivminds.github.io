@@ -56,9 +56,9 @@ fieldset {
 
 /* Allow only vertical resizing of textareas. */
 
-textarea {
+/* textarea {
   resize: vertical;
-}
+} */
 
 /* 
  * 
@@ -72,62 +72,73 @@ textarea {
 
  .index-group {
   display: flex;  
-  flex-direction: row; 
-  /* justify-content: center;  */
-  /* margin: auto;  */
- }
+  flex-direction: column; 
+  justify-content: center; 
+  margin: auto; 
+  background-color: cornflowerblue; 
+  align-items: center;
+}
 
  .index-container {
-  order: 1; 
-  width: 80%; 
-  height: 60%;
-  vertical-align: middle; 
+  /* order: 1;  */
+  width: 90%; 
+  vertical-align: middle;  
+  flex: auto; 
   display: flex; 
-  flex-direction: column;
-  float: center;
-  /* flex-grow: 1;  */
+  flex-direction: row; 
   text-align: center; 
+  justify-content: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 25%;
-  /* margin-bottom: 15%;  */
-  align-items: stretch;
+  margin-top: 15%;
+  margin-bottom: 15%; 
+  align-items: center; 
+  background-color: coral;
 }
 
 #index-pic { 
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; 
-  padding: 2%;
-} 
-
-.index-head {
-  justify-content: center; 
-  vertical-align: middle;
-  flex-direction: column; 
-  height: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */ 
+  /* width: 10%;  */
+  /* padding: 2%; */
 } 
 
 .index-intro p {
-  width: 100%; 
   text-align: center; 
   vertical-align: middle;
 }
 
 .index-intro a {
-  width: 100%; 
   text-align: center;
 }
 
-.index-blog-line { 
-  order: 2; 
+div.index-blog-line { 
+  /* order: 2;  */
   flex: none; 
   }
 
 .index-blog-line p { 
   text-align: center;
 }
+
+div.buttons {
+  display: flex; 
+  flex-wrap: wrap; 
+  align-content: center;
+}
+
+div.buttons a {
+  flex-basis: auto;
+}
+
+a.index-button { 
+  background-color:#cc0000; 
+  border:1px solid #660000; 
+  border-radius:5px; 
+  color:#fff; 
+  margin-right:10px; 
+  padding:10px 10px 10px 10px;
+} 
 
  /* 
   * The side navigation menu 
@@ -178,12 +189,6 @@ textarea {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

@@ -4,6 +4,11 @@
  * 
  */
 
+ * {
+   margin: 0; 
+   padding: 0; 
+ }
+
 html {
   color: rgb(0, 0, 0);
   font-size: 1em;
@@ -72,36 +77,52 @@ fieldset {
 
  .index-group {
   display: flex;  
-  flex-direction: column; 
+  flex-direction: row; 
   justify-content: center; 
   margin: auto; 
-  background-color: cornflowerblue; 
   align-items: center;
-}
-
- .index-container {
   /* order: 1;  */
-  width: 90%; 
+  height: 500px; 
+  width: 80%; 
   vertical-align: middle;  
   flex: auto; 
   display: flex; 
   flex-direction: row; 
   text-align: center; 
-  justify-content: center;
+  /* justify-content: space-between;  */
+  align-items: center;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 15%;
-  margin-bottom: 15%; 
+  /* margin-bottom: 15%;  */
   align-items: center; 
-  background-color: coral;
+  /* background-color: coral; */
 }
 
-#index-pic { 
-  /* margin-left: auto;
-  margin-right: auto; */ 
-  /* width: 10%;  */
+div[class*=index-intro] {
+  /* flex-direction: column; 
+  flex-wrap: wrap; 
+  flex: 1 1 0px; 
+  width: auto;  */
+  /* background-color:rgb(0, 255, 255);  */
+  text-align: center; 
+  align-items: center;
+}
+
+.index-intro-en {
+  order: 1; 
+}
+
+div.index-pic { 
+  order: 2; 
+  flex: 1 1 0px; 
+  width: auto; 
   /* padding: 2%; */
 } 
+
+.index-intro-ru {
+  order: 3; 
+}
 
 .index-intro p {
   text-align: center; 
@@ -123,8 +144,12 @@ div.index-blog-line {
 
 div.buttons {
   display: flex; 
-  flex-wrap: wrap; 
-  align-content: center;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around;
+  align-content: center; 
+  height: 100%; 
+  /* background-color: darkgreen; */
 }
 
 div.buttons a {
@@ -133,12 +158,14 @@ div.buttons a {
 
 a.index-button { 
   background-color:#cc0000; 
-  border:1px solid #660000; 
+  border:1px solid #000000; 
   border-radius:5px; 
-  color:#fff; 
-  margin-right:10px; 
-  padding:10px 10px 10px 10px;
+  /* color:#fff;  */
+  padding:5px 5px 5px 5px;
+  flex: 1 1 calc(100% - 50px); 
+  width: 100%;
 } 
+
 
  /* 
   * The side navigation menu 

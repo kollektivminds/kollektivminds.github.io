@@ -227,7 +227,7 @@ a.index-button {
   /* 100% Full-height */
   height: 100%; 
   /* 0 width - change this with JavaScript */
-  width: 5em; 
+  width: 10em; 
   /* Stay in place */
   position: fixed; 
   /* Stay on top */
@@ -280,12 +280,18 @@ a.index-button {
  * Social media buttons 
  */
 
-.social-media-buttons {
-  display: inline-block;
+ .social-media-buttons {
+   display: block; 
+   white-space: wrap;
+ }
+
+.social-media-buttons a {
+  display: inline-block; 
+  vertical-align: middle;
 }
 
 .img {
-  float: left;
+  vertical-align: middle;
 }
 
 #cv-header {

@@ -1,0 +1,474 @@
+/* 
+ * 
+ * Base styles 
+ * 
+ */
+
+ * {
+   margin: 0; 
+   padding: 0; 
+ }
+
+html {
+  background-color: whitesmoke;
+  font-size: 1em;
+  line-height: 1.15;
+}
+
+img {
+  max-height: 100%; 
+}
+
+div a {
+  color: brown;
+}
+
+.image-container {
+  position: relative; 
+  width: auto; 
+} 
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0%;
+  transition: .5s ease;
+  background-color: #cecece; 
+}
+
+.image-overlay-text {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%; 
+  /* transform: translate(25%, 25%); */
+  /* -ms-transform: translate(-50%, -50%); */
+}
+
+.image-container:hover .image-overlay {
+  opacity: .75;
+}
+
+
+/*
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* A better looking default horizontal rule */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Remove the gap between media and the bottom of their containers */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* Remove default fieldset styles. */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Allow only vertical resizing of textareas. */
+
+/* textarea {
+  resize: vertical;
+} */
+
+/* 
+ * 
+ * Custom styles
+ *  
+ */
+
+/* 
+ * Index styles 
+ */ 
+
+.index {
+  color: black; 
+  width: 80%;
+
+  position:relative;
+  margin-top: 5%;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%);
+  
+  background-color: lightgrey;
+  border:1px double #000000; 
+  border-radius:2px; 
+ }
+
+ .index-group {
+  height: 350px; 
+  width: 750px; 
+
+  display: flex;  
+  flex-direction: row; 
+  justify-content: center; 
+  vertical-align: middle;  
+  text-align: center; 
+  align-items: center;
+  
+  background-color: lightgrey;
+}
+
+div[class*=index-intro] {
+  /* flex-direction: column; 
+  flex-wrap: wrap; 
+  flex: 1 1 0px; 
+  width: auto;  */
+  /* background-color:rgb(0, 255, 255);  */
+  text-align: center; 
+  align-items: center;
+}
+
+.index-intro-en {
+  order: 1; 
+}
+
+#index-pic { 
+  order: 2; 
+  flex: 1 1 0px;
+  /* padding: 2%; */
+} 
+
+.index-intro-ru {
+  order: 3; 
+}
+
+.index-intro p {
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.index-intro a {
+  text-align: center;
+}
+
+div.index-blog-line { 
+  /* order: 2;  */
+  flex: none; 
+  }
+
+.index-blog-line p { 
+  text-align: center;
+  position: 2;
+  /* left: 50%;
+  bottom: 37%;
+  transform: translate(-50%); */
+}
+
+div.buttons {
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100%; 
+  
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around;
+  align-content: center; 
+}
+
+div.buttons a {
+  flex-basis: auto;
+
+  border: 1px dotted black; 
+  border-radius: 5px; 
+  background-color: whitesmoke;
+}
+
+a.index-button { 
+  /* background-color:#cc0000;  */
+  padding:5px 5px 5px 5px;
+  flex: 1 1 calc(100% - 50px); 
+  width: 80%;
+} 
+
+
+ /* 
+  * The side navigation menu 
+  */
+
+.sidenav {
+  /* 100% Full-height */
+  height: 100%; 
+  /* 0 width - change this with JavaScript */
+  width: 10em; 
+  /* Stay in place */
+  position: fixed; 
+  /* Stay on top */
+  z-index: 1; 
+  /* Stay at the top */
+  top: 0; 
+  left: 0;
+  /* Black*/
+  background-color: #ffffff; 
+  /* Disable horizontal scroll */
+  overflow-x: hidden; 
+  /* Place content 60px from the top */
+  padding-top: 60px; 
+  /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.5s; 
+}
+
+/* Navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 24px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* 
+ * Social media buttons 
+ */
+
+ .social-media-buttons {
+   display: block; 
+   white-space: wrap;
+ }
+
+.social-media-buttons a {
+  display: inline-block; 
+  vertical-align: middle;
+}
+
+.img {
+  vertical-align: middle;
+}
+
+#cv-header {
+  text-align: center;
+}
+
+#cv {
+  padding-left: 1.5em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/*  */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

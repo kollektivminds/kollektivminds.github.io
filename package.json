@@ -725,7 +725,7 @@
     "@11ty/eleventy": "^0.12.1"
   },
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve --input=src --output=_site && npm run assets:copy",
+    "serve": "npx @11ty/eleventy --serve && npm run assets:copy",
     "build": "npx @11ty/eleventy && npm run assets:copy",
     "assets:copy": "cp -R _site/src/* _site/",
     "test": "echo \"Error: no test specified\" && exit 1"

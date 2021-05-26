@@ -8,11 +8,15 @@ Gemfile*
 # Gemfile.lock
 doc
 .gitattributes
-package-lock.json
-package.json
+# package-lock.json
+# package.json
 site.webmanifest
 page-template.html
 page-template-ru.html
 node_modules
-.nojekyll
+# .nojekyll
 *.xml
+.deploykeys
+.htaccess
+browswerconfig.xml
+# .eleventy.json

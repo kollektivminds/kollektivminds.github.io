@@ -1,6 +1,6 @@
 ---
-layout: base2
 title: CV
+layout: base2
 ---
 # {{ title }}
 Aaron Michael Thompson 
@@ -11,9 +11,10 @@ Aaron Michael Thompson
 
 - University of Virginia (Aug 2018 - present) • Charlottesville, VA
   - Slavic Languages and Literatures, Doctor of Philosophy (expected May 2023)
-    - Dissertation title: “”
+    - Dissertation title: “A Revolutionary Gospel: Secular Transpositions of Orthodox Narrative and the Post-Christian Coming of the New Soviet Person (1905-1917)”
     - Adviser: Edith W. Clowes
-      This dissertation takes a dual-pronged analytical approach to understanding the Orthodox Christian literary tradition of the Bible and hagiographies remade by Maxim Gor’kii following the 1905 revolution. A traditional humanistic close reading of his prose and drama from 1905 to 1917 argues for thematic and structural influence from traditional Christian narrative before finding echoes of his ideological style in other revolutionary writers before the arrival of the February and October Revolutions. Finally, digital text analytic methods attempt to present a quantifiable relationship between traditional Christian literature and Gor’kii’s appropriation to craft the new ideal of Soviet culture.
+    - This dissertation takes a dual-pronged analytical approach to the Orthodox Christian literary tradition of the Bible and hagiographies remade by Maxim Gor’kii following the 1905 revolution. A traditional humanistic close reading of his prose and drama from 1905 to 1917 argues for thematic and structural influence from traditional Christian narrative before finding echoes of his ideological style in other revolutionary writers before the arrival of the February and October Revolutions. Finally, digital text analytic methods attempt to present a quantifiable relationship between traditional Christian literature and Gor’kii’s appropriation to craft the new ideal of Soviet culture.
+    - 
   - Slavic Languages and Literatures, Master of Arts, 2020
 
 

@@ -55,6 +55,11 @@ div a {
   opacity: .75;
 }
 
+.main {
+  border: darkgray;
+  padding: 5%;
+  font-size: 14px;
+}
 
 /*
  * Customize the background color to match your design.
@@ -112,194 +117,164 @@ fieldset {
  *  
  */
 
-/* 
- * Index styles 
- */ 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.index {
-  color: black; 
-  width: 80%;
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
 
-  position:relative;
-  margin-top: 5%;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%);
-  
-  background-color: lightgrey;
-  border:1px double #000000; 
-  border-radius:2px; 
- }
+li {
+  list-style: none;
+}
 
- .index-group {
-  height: 350px; 
-  width: 750px; 
+a {
+  text-decoration: none;
+}
 
-  display: flex;  
-  flex-direction: row; 
-  justify-content: center; 
-  vertical-align: middle;  
-  text-align: center; 
+.header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  
-  background-color: lightgrey;
+  padding: 1rem 1.5rem;
 }
 
-div[class*=index-intro] {
-  /* flex-direction: column; 
-  flex-wrap: wrap; 
-  flex: 1 1 0px; 
-  width: auto;  */
-  /* background-color:rgb(0, 255, 255);  */
-  text-align: center; 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.index-intro-en {
-  order: 1; 
+.nav-item {
+  margin-left: 5rem;
 }
 
-#index-pic { 
-  order: 2; 
-  flex: 1 1 0px;
-  /* padding: 2%; */
-} 
-
-.index-intro-ru {
-  order: 3; 
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
 }
 
-.index-intro p {
-  text-align: center; 
-  vertical-align: middle;
+.nav-link:hover{
+  color: #482ff7;
 }
 
-.index-intro a {
-  text-align: center;
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
 }
 
-div.index-blog-line { 
-  /* order: 2;  */
-  flex: none; 
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-.index-blog-line p { 
-  text-align: center;
-  position: 2;
-  /* left: 50%;
-  bottom: 37%;
-  transform: translate(-50%); */
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
 }
 
-div.buttons {
-  padding: 0 0 0 0;
-  width: 100%;
-  height: 100%; 
-  
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  justify-content: space-around;
-  align-content: center; 
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
 }
 
-div.buttons a {
-  flex-basis: auto;
-
-  border: 1px dotted black; 
-  border-radius: 5px; 
-  background-color: whitesmoke;
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
 }
 
-a.index-button { 
-  /* background-color:#cc0000;  */
-  padding:5px 5px 5px 5px;
-  flex: 1 1 calc(100% - 50px); 
-  width: 80%;
-} 
-
-
- /* 
-  * The side navigation menu 
-  */
-
-.sidenav {
-  /* 100% Full-height */
-  height: 100%; 
-  /* 0 width - change this with JavaScript */
-  width: 10em; 
-  /* Stay in place */
-  position: fixed; 
-  /* Stay on top */
-  z-index: 1; 
-  /* Stay at the top */
-  top: 0; 
-  left: 0;
-  /* Black*/
-  background-color: #ffffff; 
-  /* Disable horizontal scroll */
-  overflow-x: hidden; 
-  /* Place content 60px from the top */
-  padding-top: 60px; 
-  /* 0.5 second transition effect to slide in the sidenav */
-  transition: 0.5s; 
+.footer-basic li {
+  padding:0 10px;
 }
 
-/* Navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 24px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-  transition: 0.5s;
-  display: inline-block;
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.footer-basic ul a:hover {
+  opacity:1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  /*border-radius:50%;
+  border:1px solid #ccc;*/
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
 }
 
-/* 
- * Social media buttons 
- */
-
- .social-media-buttons {
-   display: block; 
-   white-space: wrap;
- }
-
-.social-media-buttons a {
-  display: inline-block; 
-  vertical-align: middle;
+.footer-basic .social > a:hover {
+  opacity:0.9;
 }
 
-.img {
-  vertical-align: middle;
-}
-
-#cv-header {
-  text-align: center;
-}
-
-#cv {
-  padding-left: 1.5em;
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
 }
 
 /* ==========================================================================

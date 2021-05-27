@@ -1,5 +1,5 @@
 ---
 title: Homepage 
-layout: base
+layout: base2
 ---
 Hello world! This is a homepage hopefully...

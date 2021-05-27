@@ -1,11 +1,11 @@
 ---
-layout: base
+layout: base2
 title: CV
 ---
 # {{ title }}
 Aaron Michael Thompson 
 
-[amt3ad@virginia.edu](mailto:amt3ad@virginia.edu) | [Github](https://github.com/amthomps1) | [Twitter](https://twitter.com/kollektivminds)
+[amt3ad@virginia.edu](mailto:amt3ad@virginia.edu) | [Github](https://github.com/amthomps1)
 
 ## Education
 

@@ -9,6 +9,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy('src/css');
     eleventyConfig.addPassthroughCopy('src/js');
     eleventyConfig.addPassthroughCopy('src/img');
+    eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
     // Add all of src to watch list 
     eleventyConfig.addWatchTarget("src/")

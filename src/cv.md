@@ -5,8 +5,7 @@ layout: base2
 # {{ title }}
 <div class="cv cv-header">
   Aaron Michael Thompson
-  
-  <a href="mailto:amt3ad@virginia.edu">amt3ad@virginia.edu</a> | <a href="https://github.com/amthomps1">Github</a>
+  <a href="mailto:amt3ad@virginia.edu">amt3ad@virginia.edu</a>
 </div>
 
 <div>

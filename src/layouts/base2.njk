@@ -1,10 +1,13 @@
+---
+permalink: "/{{ page.fileSlug }}.html"
+---
 
 <!doctype html>
 <html class="js" lang="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="utf-8">
-  <title>Aaron M. Thompson | Homepage</title>
+  <title>Aaron M. Thompson | {{ title }}</title>
   <meta content="" name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -17,8 +20,8 @@
   
   <!-- Place favicon.ico in the root directory -->
 
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="{{ '/css/main.css' | url }}" rel="stylesheet">
+  <link href="{{ '/css/normalize.css' | url }}" rel="stylesheet">
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -34,8 +37,8 @@
    -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   
-  <script src="js/main.js"></script>
-  <script src="js/plugins.js"></script>
+  <script src="{{ 'js/main.js' | url }}"></script>
+  <script src="{{ 'js/plugins.js' | url }}"></script>
   
   <meta content="#fafafa" name="theme-color">
 </head>
@@ -70,16 +73,7 @@
   </header>
 
   <div class="main">
-    <div style="display:flex">
-    <div style="flex:50%">
-    <img src="img/self300.png"></img>
-    </div>
-    <div style="flex:50%">
-        <p>Hello! I'm Aaron. I do things like writing a <a href="/research">dissertation on religious in the in the Russian interrevolutionary period</a>, creating <a href="/pedagogy">digital pedagogy resources</a> for language and cultural learning, and experimenting with <a href="/research">Natural Language Processing for Slavic languages</a> to aid Digital Humanities interests....</p>
-        <p>For 2021-2022 I am the President of the <a href="http://gradcouncil.com/">Graduate School of Arts & Sciences Council</a> at UVA. I've worked in <a href="/cv">other roles</a> at the university level before now.</p>
-        <p>Getting in touch is probably easiest viaaa <a href="mailto:amt3ad@virginia.edu">email</a>, but you can find me on <a href="https://github.com/amthomps1">GitHub</a> and sometimes <a href="https://twitter.com/kollektivminds">Twitter</a> as well.</p>
-    </div>
-</div>
+    {{ content | safe }}
   </div>
   
   <!-- Google Analytics-->
@@ -94,13 +88,13 @@
     <footer>
         <div class="social">
           <a href="https://github.com/amthomps1">
-            <img src="img/GitHub-Mark-32px.png" alt="GitHub link">
+            <img src="{{ 'img/GitHub-Mark-32px.png' | url }}" alt="GitHub link">
           </a>
           <a href="https://twitter.com/kollektivminds">
-            <img src="img/twitter_32x32.png" alt="Twitter link">
+            <img src="{{ 'img/twitter_32x32.png' | url }}" alt="Twitter link">
           </a>
           <a href="mailto:amt3ad@virginia.edu">
-            <img src="img/gmail_32x32.png" alt="Gmail link">
+            <img src="{{ 'img/gmail_32x32.png' | url }}" alt="Gmail link">
           </a>
         </div>
         <ul class="list-inline">

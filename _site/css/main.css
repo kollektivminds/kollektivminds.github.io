@@ -11,8 +11,7 @@
 
 html {
   background-color: whitesmoke;
-  font-size: 1em;
-  line-height: 1.15;
+  line-height: 1em;
 }
 
 img {
@@ -20,7 +19,8 @@ img {
 }
 
 div a {
-  color: brown;
+  color: inherit;
+  text-decoration: dotted underline;
 }
 
 .image-container {
@@ -56,9 +56,11 @@ div a {
 }
 
 .main {
-  border: darkgray;
+  border: 10px black;
   padding: 5%;
-  font-size: 14px;
+  font-size: 18px;
+  width: 95%;
+  color: darkslategray;
 }
 
 /*
@@ -117,11 +119,6 @@ fieldset {
  *  
  */
 
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html {
   font-size: 62.5%;
@@ -145,6 +142,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  background-color: lightslategray;
 }
 
 .hamburger {
@@ -174,7 +172,7 @@ a {
 .nav-link{
   font-size: 1.6rem;
   font-weight: 400;
-  color: #475569;
+  color: whitesmoke;
 }
 
 .nav-link:hover{
@@ -219,8 +217,8 @@ a {
 
 .footer-basic {
   padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
+  background-color:lightslategray;
+  color: whitesmoke;
 }
 
 .footer-basic ul {
@@ -271,7 +269,7 @@ a {
   margin-top:15px;
   text-align:center;
   font-size:13px;
-  color:#aaa;
+  color:whitesmoke;
   margin-bottom:0;
 }
 

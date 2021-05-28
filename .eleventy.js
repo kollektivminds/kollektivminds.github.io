@@ -24,14 +24,3 @@ module.exports = eleventyConfig => {
         }
     }
 };
-
-/* module.exports = config => {
-
-module.exports = {
-    dir: {
-        // ⚠️ These values are both relative to your input directory.
-        includes: "src/_includes",
-        layouts: "src/layouts"
-    }
-};
-*/ 

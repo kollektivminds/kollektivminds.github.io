@@ -18,41 +18,14 @@ img {
   max-height: 100%; 
 }
 
+div img {
+  vertical-align: center;
+  align-items: center;
+}
+
 div a {
   color: inherit;
   text-decoration: dotted underline;
-}
-
-.image-container {
-  position: relative; 
-  width: auto; 
-} 
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: auto;
-  opacity: 0%;
-  transition: .5s ease;
-  background-color: #cecece; 
-}
-
-.image-overlay-text {
-  color: black;
-  font-size: 12px;
-  position: absolute;
-  bottom: 5%;
-  right: 5%; 
-  /* transform: translate(25%, 25%); */
-  /* -ms-transform: translate(-50%, -50%); */
-}
-
-.image-container:hover .image-overlay {
-  opacity: .75;
 }
 
 .main {

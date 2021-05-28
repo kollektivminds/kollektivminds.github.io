@@ -5,7 +5,7 @@ require('dotenv').config();
 module.exports = eleventyConfig => {
 
     // Copy our static assets to the output folder
-    eleventyConfig.addPassthroughCopy('src/CNAME'); // Needed by GitHub Pages
+    //eleventyConfig.addPassthroughCopy('src/CNAME'); // Needed by GitHub Pages
     eleventyConfig.addPassthroughCopy('src/css');
     eleventyConfig.addPassthroughCopy('src/js');
     eleventyConfig.addPassthroughCopy('src/img');

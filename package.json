@@ -411,7 +411,7 @@
     "neo-async": "^2.6.2",
     "nice-try": "^1.0.5",
     "node-addon-api": "^1.7.1",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "node-libs-browser": "^2.2.1",
     "node-releases": "^1.1.53",
     "nopt": "^5.0.0",

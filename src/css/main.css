@@ -29,11 +29,12 @@ div a {
 }
 
 .main {
-  border: 10px black;
+  border: 10px double black;
   padding: 5%;
+  margin: 5%;
   font-size: 18px;
-  width: 95%;
-  color: darkslategray;
+  width: 90%;
+  color: gray;
 }
 
 /*
@@ -115,7 +116,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: lightslategray;
+  background-color: gray;
 }
 
 .hamburger {
@@ -190,7 +191,7 @@ a {
 
 .footer-basic {
   padding:40px 0;
-  background-color:lightslategray;
+  background-color:gray;
   color: whitesmoke;
 }
 
@@ -415,4 +416,3 @@ a {
     page-break-after: avoid;
   }
 }
-

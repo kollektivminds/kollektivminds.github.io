@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="js" lang="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aaron M. Thompson | {{ title }}</title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <meta content="Home | Aaron M. Thompson" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
+
+  <link href="site.webmanifest" rel="manifest">
+  
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="{{ '/css/main.css' | url }}" rel="stylesheet">
+  <link href="{{ '/css/normalize.css' | url }}" rel="stylesheet">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <meta content="#fafafa" name="theme-color">
+</head>
+
+<div id="" class="">
+
+  <!-- Language switch -->
+  <!--
+  <select id="lang-switch">
+    <option value="en">English</option>
+    <option value="es">Espanol</option>
+    <option value="ru">Русский</option>
+  </select>
+  -->
+
+  {{ content | safe }}
+  <script src="{{ 'js/main.js' | url }}"></script>
+  <script src="{{ 'js/plugins.js' | url }}"></script>
+
+</div>
+
+</body>
+
+</html>

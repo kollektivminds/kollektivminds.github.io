@@ -1,6 +1,9 @@
 ---
 title: Homepage 
 layout: base2
+eleventyNavigation: 
+    key: home 
+    order: 1
 ---
 
 <div style="display:flex;flex-wrap:wrap;align-items:center;">

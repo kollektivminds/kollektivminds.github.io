@@ -1,12 +1,11 @@
 ---
-layout: base2
+layout: page
 title: Blog Home
+eleventyNavigation:
+  key: Archive 
+  parent: home
+  order: 2
 ---
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
-{% set postslist = collections.posts %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>

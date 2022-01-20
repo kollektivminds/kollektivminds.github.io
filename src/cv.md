@@ -1,6 +1,10 @@
 ---
 title: CV
-layout: base2
+layout: page
+eleventyNavigation:
+  key: Archive 
+  parent: home
+  order: 2
 ---
 # {{ title }}
 <div class="cv cv-header">

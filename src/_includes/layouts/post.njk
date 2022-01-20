@@ -1,23 +1,19 @@
----
-layout: base2
-templateClass: tmpl-post
----
-<h1>{{ title }}</h1>
+{% extends "page.njk" %}
 
-<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-{%- for tag in tags | filterTagList -%}
-{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{%- endfor %}
+{% block content %}
 
-{{ content | safe }}
+  <h1>{{ title }}</h1>
 
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-<hr>
-<ul>
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
+  {% if date %}<p class="time"><time datetime="{{ date }}">{{ date }}</time></p>{% endif %}
+
+  <p class="words">{{ content | wordcount }} words</p>
+
+  {{ content | safe }}
+
+  {% set nextPost = collections.post | getNextCollectionItem(page) %}
+  {% if nextPost %}<p>Next article: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
+
+  {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
+  {% if previousPost %}<p>Previous article: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></p>{% endif %}
+
+{% endblock %}

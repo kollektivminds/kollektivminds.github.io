@@ -1,6 +1,6 @@
 ---
 title: Homepage 
-layout: base2
+layout: page
 eleventyNavigation: 
     key: home 
     order: 1

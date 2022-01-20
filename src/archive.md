@@ -1,9 +1,10 @@
 ---
-layout: base2
+layout: page
 permalink: archive/
 title: Blog Archive
 eleventyNavigation:
-  key: Archive
+  key: Archive 
+  parent: blog
   order: 2
 ---
 

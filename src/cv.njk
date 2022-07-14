@@ -6,9 +6,10 @@ eleventyNavigation:
   parent: home
   order: 2
 ---
-<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 
 <div id="adobe-dc-view"></div>
+  
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 
   <script type="text/javascript">
 
@@ -23,11 +24,7 @@ eleventyNavigation:
      {
 
          content:  {location: {url: "data/cv_latest_nocontact.pdf"}},
-
          metaData: {fileName: "AaronMThompsonCV"}
-
-     });
-
+     }, {embedMode: "IN_LINE"});
    });
-
   </script>

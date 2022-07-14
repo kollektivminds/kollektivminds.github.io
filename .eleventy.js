@@ -18,19 +18,7 @@ module.exports = eleventyConfig => {
     /* --- PLUGINS --- */
 
     // navigation
-    
-    const pluginPDFEmbed = require('eleventy-plugin-pdfembed');
 
-    module.exports = (eleventyConfig) => {
-
-	// more stuff here
-
-	eleventyConfig.addPlugin(pluginPDFEmbed, {
-		key: '544414429e0642b5b6449a840c26e164'
-	});
-
-    }
-    
     eleventyConfig.addPlugin( require('@11ty/eleventy-navigation') );
 
     // Define internal variables, i.e. names of dirs

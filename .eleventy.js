@@ -6,9 +6,10 @@ module.exports = eleventyConfig => {
 
     // Copy our static assets to the output folder
     //eleventyConfig.addPassthroughCopy('src/CNAME'); // Needed by GitHub Pages
-    eleventyConfig.addPassthroughCopy('src/css');
-    eleventyConfig.addPassthroughCopy('src/js');
-    eleventyConfig.addPassthroughCopy('src/img');
+    //eleventyConfig.addPassthroughCopy('src/css/');
+    //eleventyConfig.addPassthroughCopy('src/js/');
+    //eleventyConfig.addPassthroughCopy('src/img/');
+    //eleventyConfig.addPassthroughCopy('src/_includes/');
     //eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
     // Add all of src to watch list 
@@ -17,6 +18,19 @@ module.exports = eleventyConfig => {
     /* --- PLUGINS --- */
 
     // navigation
+    
+    const pluginPDFEmbed = require('eleventy-plugin-pdfembed');
+
+    module.exports = (eleventyConfig) => {
+
+	// more stuff here
+
+	eleventyConfig.addPlugin(pluginPDFEmbed, {
+		key: '544414429e0642b5b6449a840c26e164'
+	});
+
+    }
+    
     eleventyConfig.addPlugin( require('@11ty/eleventy-navigation') );
 
     // Define internal variables, i.e. names of dirs

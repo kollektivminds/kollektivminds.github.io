@@ -1,0 +1,33 @@
+---
+title: CV
+layout: page
+eleventyNavigation:
+  key: Archive 
+  parent: home
+  order: 2
+---
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+<div id="adobe-dc-view"></div>
+
+  <script type="text/javascript">
+
+   document.addEventListener("adobe_dc_view_sdk.ready", function()
+
+   {
+
+      var adobeDCView = new AdobeDC.View({clientId: "544414429e0642b5b6449a840c26e164", divId: "adobe-dc-view"});
+
+      adobeDCView.previewFile(
+
+     {
+
+         content:  {location: {url: "_includes/cv_latest_nocontact.pdf"}},
+
+         metaData: {fileName: "AaronMThompsonCV"}
+
+     });
+
+   });
+
+  </script>

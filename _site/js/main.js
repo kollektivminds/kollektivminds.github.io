@@ -22,7 +22,10 @@ $('#lang-switch').change(function () {
       $('[lang="en"]').show();
   }
 });
-*/ 
+*/
+const { copy } = require("fs-extra");
+
+ 
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -32,6 +35,22 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+}
+
+// click-to-keyboard for email addresses
+function clickCopy() {
+  // get text 
+  var copyText = "amt3ad@virginia.edu";
+
+  // select text 
+  copyText.select();
+  copyText.setSelectionRange(0, 9999); /* for mobiles */
+
+  // copy text 
+  navigator.clipboard.writeText(copyText.value);
+
+  // alert copies text 
+  alert("Copied " + copyText.value + " to clipboard");
 }
 
 // Inside the Media Query

@@ -6,24 +6,13 @@
 
 html {
   background-color: whitesmoke;
-  line-height: 1em;
-  font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  line-height: 1.2em;
   color: black;
-}
-
-img {
-  max-height: 100%; 
 }
 
 div img {
   vertical-align: center;
   align-items: center;
-}
-
-
-li {
-  list-style: none;
 }
 
 header a {
@@ -40,19 +29,23 @@ footer a {
  * 
  */
 
- .main {
+.main {
   border: 3px solid black;
   padding: 3%;
   margin: 3%;
-  font-size: 14px;
-  width: 90%;
+  font-size: 18px;
+  width: 95%;
   color: inherit;
 }
 
- .main a {
+.main a {
   text-decoration: underline; 
   color: inherit;
-  }
+}
+
+.main img {
+  margin:1em;
+}
 
 /*
  * Customize the background color to match your design.
@@ -140,11 +133,15 @@ fieldset {
 .nav-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .nav-item {
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .nav-link{
@@ -153,14 +150,15 @@ fieldset {
 }
 
 .nav-link:hover{
-  color: #482ff7;
+  /* color: #482ff7; */
+  text-transform: underline;
 }
 
-.nav-logo {
+/* .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
   color: #482ff7;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .nav-menu {

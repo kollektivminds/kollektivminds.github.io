@@ -22,10 +22,9 @@ $('#lang-switch').change(function () {
       $('[lang="en"]').show();
   }
 });
-*/
-const { copy } = require("fs-extra");
+*/ 
 
- 
+// const { copy } = require("fs-extra");
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");

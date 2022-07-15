@@ -1,10 +1,13 @@
+---
+permalink: "/{{ page.filePathStem }}.html"
+---
 
 <!doctype html>
 <html class="js" lang="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="utf-8">
-  <title>Aaron M. Thompson | Blog Home</title>
+  <title>Aaron M. Thompson | {{ title }}</title>
   <meta content="" name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -17,8 +20,8 @@
   
   <!-- Place favicon.ico in the root directory -->
 
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="{{ '/css/main.css' | url }}" rel="stylesheet">
+  <link href="{{ '/css/normalize.css' | url }}" rel="stylesheet">
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -33,8 +36,8 @@
   <!-- icon stylesheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   
-  <script src="js/main.js"></script>
-  <script src="js/plugins.js"></script>
+  <script src="{{ 'js/main.js' | url }}"></script>
+  <script src="{{ 'js/plugins.js' | url }}"></script>
   
   <!-- <meta content="#fafafa" name="theme-color"> -->
 </head>
@@ -67,22 +70,20 @@
   </header>
 
   <div class="main">
-    
-
-<p>More posts can be found in <a href="/archive/">the archive</a>.</p>
+    {{ content | safe }}
   </div>
 
   <div class="footer-basic">
     <footer>
         <div class="social">
           <a href="https://github.com/kollektivminds">
-            <img src="img/GitHub-Mark-32px.png" alt="GitHub link">
+            <img src="{{ 'img/GitHub-Mark-32px.png' | url }}" alt="GitHub link">
           </a>
           <!-- <a href="https://twitter.com/kollektivminds">
-            <img src="img/twitter_32x32.png" alt="Twitter link">
+            <img src="{{ 'img/twitter_32x32.png' | url }}" alt="Twitter link">
           </a> -->
           <a href="mailto:amt3ad@virginia.edu">
-            <img src="img/gmail_32x32.png" alt="email link">
+            <img src="{{ 'img/gmail_32x32.png' | url }}" alt="email link">
           </a>
         </div>
         <ul class="list-inline">

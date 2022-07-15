@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 # {{ title }}
 
-____
+___
 
 ## A Revolutionary Gospel (Dissertation)
 *A Revolutionary Gospel: Secular Transpositions of Orthodox Narrative and the Post-Christian Coming of the New Soviet Person (1905-1917)* [Expected May 2024]

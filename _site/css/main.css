@@ -6,13 +6,15 @@
 
 html {
   background-color: whitesmoke;
-  line-height: 1.2em;
   color: black;
 }
 
-div img {
+img {
   vertical-align: center;
   align-items: center;
+  border-radius: 10px; 
+  width: auto;
+  height: auto;
 }
 
 header a {
@@ -23,46 +25,6 @@ footer a {
   color: inherit;
 }
 
-/* 
- * 
- * class styles 
- * 
- */
-
-.main {
-  border: 3px solid black;
-  padding: 3%;
-  margin: 3%;
-  font-size: 18px;
-  width: 95%;
-  color: inherit;
-}
-
-.main a {
-  text-decoration: underline; 
-  color: inherit;
-}
-
-.main img {
-  margin:1em;
-}
-
-/*
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* A better looking default horizontal rule */
-
 hr {
   display: block;
   height: 1px;
@@ -70,6 +32,33 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+/* 
+ * 
+ * class styles 
+ * 
+ */
+
+.main {
+  border: 1px solid black;
+  padding: 3%;
+  margin: auto;
+  font-size: 18px;
+  width: 50%;
+  color: inherit;
+  line-height: 1.25em;
+  display:flex; 
+  align-items: center;
+}
+
+.main a {
+  text-decoration: underline double auto; 
+  color: inherit;
+}
+
+.main img {
+  margin: 1em;
 }
 
 /* Remove the gap between media and the bottom of their containers */
@@ -85,11 +74,11 @@ video {
 
 /* Remove default fieldset styles. */
 
-fieldset {
+/* fieldset {
   border: 0;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Allow only vertical resizing of textareas. */
 
@@ -99,9 +88,19 @@ fieldset {
 
 /* 
  * 
- * Custom styles
+ * nav styles
  *  
  */
+
+::-moz-selection {
+  background: #fefefe;
+  text-shadow: none;
+}
+
+::selection {
+  background: #fefefe;
+  text-shadow: none;
+}
 
 .header{
   border-bottom: 1px solid #E2E8F0;
@@ -151,7 +150,7 @@ fieldset {
 
 .nav-link:hover{
   /* color: #482ff7; */
-  text-transform: underline;
+  text-decoration: underline;
 }
 
 /* .nav-logo {

@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 2
 ---
 # {{ title }}
-
+___
 ## The Need for a Natively Digital Textbook
 
 ## The Textbook

@@ -45,11 +45,9 @@ hr {
   padding: 3%;
   margin: auto;
   font-size: 18px;
-  width: 50%;
+  width: 75%;
   color: inherit;
   line-height: 1.25em;
-  display:flex; 
-  align-items: center;
 }
 
 .main a {

@@ -36,6 +36,15 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
 // click-to-keyboard for email addresses
 function clickCopy() {
   // get text 
@@ -52,29 +61,6 @@ function clickCopy() {
   alert("Copied " + copyText.value + " to clipboard");
 }
 
-// Inside the Media Query
-/*
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
-*/
 /* Set the width of the side navigation to 200px and the left margin of the page content to 250px and add a black background color to body 
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";

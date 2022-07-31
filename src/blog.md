@@ -10,7 +10,7 @@ pagination:
 <h1>{{ title }}</h1>
 
 <ul>
-  {%- for post in posts | reverse -%}
+  {%- for post in posts -%}
     <li>
       <a href="{{ post.url }}">"{{ post.data.title }}"</a> <i>(published {{ post.date }})</i> 
       <p>{% if post.data.teaser %}

@@ -1,10 +1,8 @@
 ---
-Title: Test Post
+Title: Test Post 2
 Description: This is a test post for the blog. 
 Date: 2020-02-21
-tags: 
-    - test
-    - post
 layout: post
+categories: ["test", "blog", "post"]
 ---
-Testing the post twice
+Testing the post twice!

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Home
+title: Blog Archive
 pagination:
     data: collections.posts
     size: 10
@@ -27,15 +27,3 @@ pagination:
     Next
     {% endif %}
   </p>
----
-<h1>{{ title }}</h1>
-
-{% set posts = collections.posts | reverse %}
-{% for post in posts %}
-  <h2>
-    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-  </h2>
-  {{ post.date }}
-{% endfor %}
-
-<p>More posts can be found in <a href="{{ 'archive.html' | url }}">the archive</a>.</p>

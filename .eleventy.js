@@ -2,18 +2,19 @@
 
 require('dotenv').config();
 
-module.exports = eleventyConfig => {
+module.exports = function(eleventyConfig) {
 
     // Copy our static assets to the output folder
-    eleventyConfig.addPassthroughCopy('src/CNAME'); // Needed by GitHub Pages
-    eleventyConfig.addPassthroughCopy('src/css/');
-    eleventyConfig.addPassthroughCopy('src/js/');
-    eleventyConfig.addPassthroughCopy('src/img/');
-    eleventyConfig.addPassthroughCopy('src/_includes/');
-    eleventyConfig.addPassthroughCopy('src/favicon.ico');
+    eleventyConfig.addPassthroughCopy('CNAME'); // Needed by GitHub Pages
+    eleventyConfig.addPassthroughCopy('css/');
+    eleventyConfig.addPassthroughCopy('js/');
+    eleventyConfig.addPassthroughCopy('img/');
+    eleventyConfig.addPassthroughCopy('_includes/');
+    eleventyConfig.addPassthroughCopy('favicon.ico');
 
     // Add all of src to watch list 
-    eleventyConfig.addWatchTarget("src/*")
+    eleventyConfig.addWatchTarget("src/*");
+    eleventyConfig.addWatchTarget('src/posts/*');
 
     /* --- PLUGINS --- */
 

@@ -14,7 +14,6 @@ module.exports = function(eleventyConfig) {
 
     // Add all of src to watch list 
     eleventyConfig.addWatchTarget("src/*");
-    eleventyConfig.addWatchTarget('src/posts/*');
 
     /* --- PLUGINS --- */
 
@@ -40,10 +39,10 @@ module.exports = function(eleventyConfig) {
             htmlTemplateEngine: "njk",
 
             dir: {
-            input: "src/*",
+            input: "src",
             output: "_site", 
             includes: "_includes",
-            layouts: "_includes/layouts"
+            layouts: "_includes/layouts",
         }
     };
 };

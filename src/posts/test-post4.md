@@ -1,7 +1,7 @@
 ---
-Title: Test Post 4
-Description: This is a test post for the blog. 
-Date: 2020-02-23
+title: Test Post 4
+description: This is a test post for the blog. 
+date: 2020-02-23
 layout: post
 categories: ["test", "blog", "post"]
 ---

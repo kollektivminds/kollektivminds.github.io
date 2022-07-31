@@ -1,41 +1,23 @@
 ---
 layout: page
-title: Blog Home
+title: Blog
 pagination:
     data: collections.posts
-    size: 10
+    size: 3
     alias: posts
     reverse: true
 ---
-<h1>Archive</h1>
-
-<ul>
-  {% for post in posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> <i>(written {{ post.date }})</i></li>
-  {% endfor %}
-  </ul>
-  
-  <p>
-    {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">Previous</a>
-    {% else %}
-    Previous
-    {% endif %} / 
-    {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">Next</a>
-    {% else %}
-    Next
-    {% endif %}
-  </p>
----
 <h1>{{ title }}</h1>
 
-{% set posts = collections.posts | reverse %}
-{% for post in posts %}
-  <h2>
-    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-  </h2>
-  {{ post.date }}
-{% endfor %}
-
+<ul>
+  {%- for post in posts | reverse -%}
+    <li>
+      <a href="{{ post.url }}">"{{ post.title }}"</a> <i>(published {{ post.date }})</i></li>
+      {% if post.data.teaser %}
+        <p>{{ post.data.teaser }}</p>
+      {% endif %}
+    </li>
+  {%- endfor -%}
+</ul>
+---
 <p>More posts can be found in <a href="{{ 'archive.html' | url }}">the archive</a>.</p>

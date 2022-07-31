@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Blog
+title: Blog Home
 pagination:
     data: collections.posts
-    size: 3
+    size: 10 
     alias: posts
     reverse: true
 ---
@@ -12,10 +12,10 @@ pagination:
 <ul>
   {%- for post in posts | reverse -%}
     <li>
-      <a href="{{ post.url }}">"{{ post.title }}"</a> <i>(published {{ post.date }})</i></li>
-      {% if post.data.teaser %}
-        <p>{{ post.data.teaser }}</p>
-      {% endif %}
+      <a href="{{ post.url }}">"{{ post.data.title }}"</a> <i>(published {{ post.date }})</i> 
+      <p>{% if post.data.teaser %}
+          {{ post.data.teaser }}
+      {% endif %}</p>
     </li>
   {%- endfor -%}
 </ul>

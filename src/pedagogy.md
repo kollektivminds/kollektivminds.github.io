@@ -19,7 +19,7 @@ A Czech proverb nicely summarizes my general approach to language acquisition: â
 
 ___
 
-## Interactive Materials for First-Year Russia, an Open Educational Resource 
+## Interactive Materials for First-Year Russian, an Open Educational Resource 
 
 Members of UVA's Department of Slavic Languages & Literatures have created a set of natively digital resources for first-year university students in Russian-language courses. The PI of the project is Anna Borovskaya-Ellis. The resources, including traditional textbook explanatory content as well as digitally internative exercises made with the [H5P](https://h5p.com/) tool suite, are hosted on [PressBooks](https://pressbooks.com/) and are currently being tested in UVA Russian-language classrooms. After a trial run, the resource will be available within the [Open Educational Resource (OER) Commons](https://www.oercommons.org/) network.
 

@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Blog Home
+title: Blog
 pagination:
-    data: collections.posts
+    data: collections.blog
     size: 10 
     alias: posts
     reverse: true
 ---
-<h1>{{ title }}</h1>
-
+# {{ title }}
+___
 <ul>
   {%- for post in posts -%}
     <li>
@@ -20,4 +20,4 @@ pagination:
   {%- endfor -%}
 </ul>
 ---
-<p>More posts can be found in <a href="{{ 'archive.html' | url }}">the archive</a>.</p>
+<p>More posts can be found in <a href="{{ 'blog/archive.html' | url }}">the archive</a>.</p>

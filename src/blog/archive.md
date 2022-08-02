@@ -1,15 +1,16 @@
 ---
-layout: page
 title: Archive
+layout: page
+eleventyExcludeFromCollections: true
 pagination:
-    data: collections.posts
+    data: collections.blog
     size: 10
     alias: posts
     reverse: true
 ---
-<h1>{{ title }}</h1>
-
-<p>This is a list of the oldest posts. To see the newest entries, return to the <a href="/blog.html">blog home</a>.</a></p>
+# {{ title }}
+___
+<p>This is a list or the oldest posts. To see the newest entries, return to the <a href="/blog.html">blog home</a>.</a></p>
   {%- for post in posts | reverse -%}
   <li>
     <a href="{{ post.url }}">"{{ post.data.title }}"</a> <i>(published {{ post.date }})</i>
@@ -25,7 +26,6 @@ pagination:
     {% endif %} / 
     {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}">Next</a>
-    {% else %}
-    Next
+    {%else %} Next
     {% endif %}
   </p>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: info
 title: Open Education First-Year Russian Language Textbook
 eleventyNavigation:
   key: Archive 

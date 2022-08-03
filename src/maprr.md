@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: info
 title: Mapping Imagined Geographies of Revolutionary Russia 1914-1922 (MAPRR)
 eleventyNavigation:
   key: Archive

@@ -15,6 +15,11 @@ module.exports = function(eleventyConfig) {
     // Add all of src to watch list 
     eleventyConfig.addWatchTarget("src/*");
 
+    // filters
+    eleventyConfig.addFilter("dateFix", function(value) {
+        return value.toUTCString()
+    });
+
     /* --- PLUGINS --- */
 
     // navigation

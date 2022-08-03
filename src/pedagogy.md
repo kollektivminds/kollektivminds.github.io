@@ -1,13 +1,11 @@
 ---
-layout: page
+layout: info
 title: Pedagogy
 eleventyNavigation:
   key: Archive 
   parent: home
   order: 2
 ---
-# {{ title }}
-___
 
 ## Background 
 

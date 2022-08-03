@@ -7,17 +7,19 @@ pagination:
     alias: posts
     reverse: true
 ---
-# {{ title }}
-___
+<h1>{{ title }}</h1>
+<hr>
 <ul>
-  {%- for post in posts -%}
+  {% for post in posts %}
+    {% if post.data.publish %}
     <li>
       <a href="{{ post.url }}">"{{ post.data.title }}"</a> <i>(published {{ post.date }})</i> 
       <p>{% if post.data.teaser %}
           {{ post.data.teaser }}
       {% endif %}</p>
     </li>
-  {%- endfor -%}
+  {% endif %}
+  {% endfor %}
 </ul>
 ---
 <p>More posts can be found in <a href="{{ 'blog/archive.html' | url }}">the archive</a>.</p>

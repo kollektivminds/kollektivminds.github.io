@@ -1,13 +1,12 @@
 ---
-layout: page
+layout: info
 title: Research
+date: Last Modified
 eleventyNavigation:
   key: Archive 
   parent: home
   order: 2
 ---
-# {{ title }}
-___
 ## _A Revolutionary Gospel_
 *A Revolutionary Gospel: Secular Transpositions of Orthodox Narrative and the Post-Christian Coming of the New Soviet Person (1905-1917)* [Expected May 2024]
 

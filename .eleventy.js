@@ -17,7 +17,10 @@ module.exports = function(eleventyConfig) {
 
     // filters
     eleventyConfig.addFilter("dateFix", function(value) {
-        return value.toUTCString()
+        const pattern = /[A-z]{3}/g//,\s[0-9]{2}\s[A-z]{3}\s[0-9]{4}/g"
+        const dateObjStr = value.toUTCString()
+        const cleanDate = dateObjStr.search(pattern)
+        return dateObjStr + 'i'
     });
 
     /* --- PLUGINS --- */

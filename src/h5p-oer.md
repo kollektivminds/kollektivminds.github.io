@@ -1,13 +1,11 @@
 ---
 layout: info
-title: Open Education First-Year Russian Language Textbook
+title: An Open Education First-Year Russian Language Textbook
 eleventyNavigation:
   key: Archive 
   parent: Pedagogy
   order: 2
 ---
-# {{ title }}
-___
 ## The Need for a Natively Digital Textbook
 
 It is difficult for many to think of higher education without the standard textbook. However, the resource itself is often large and heavy enough to fit in at Stonehenge, and its price is high enough to make any student wince. For some, buying another textbook can mean insufficient money for healthy food, healthcare needs, or other (honestly more important) needs. For instructors, student work in the traditional format means lugging around stacks of papers that represent endless hours of grading and countless items to keep track of.
@@ -24,6 +22,6 @@ These are the two fundamental building blocks of the textbook outside of domain 
 
 [H5P](https://h5p.org/) (originally from "HTML 5 Package") is a free and open-source suite of tools based on the latest website technology. Anyone can use it to create interactive, mobile-friendly content on the Internet, and it comes with dozens of options for instructors to present and review information, including audiovisual sources. H5P can be integrated into many learning management systems and completes the grading automatically with optional extended feedback.
 
-## Instructional Design for Digital Self-Learning
+<!-- ## Instructional Design for Digital Self-Learning
 
-As a designer and author of a natively digital textbook, there was many things to consider regarding what kind of material would actually work in the format.
+As a designer and author of a natively digital textbook, there was many things to consider regarding what kind of material would actually work in the format. -->

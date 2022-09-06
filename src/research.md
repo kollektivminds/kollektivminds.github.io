@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 2
 ---
 ## _A Revolutionary Gospel_
-*A Revolutionary Gospel: Secular Transpositions of Orthodox Narrative and the Post-Christian Coming of the New Soviet Person (1905-1917)* [Expected May 2024]
+*A Revolutionary Gospel: Secular Transpositions of Orthodox Narrative and the Post-Christian Coming of the New Soviet Person (1892-1917)* [Expected May 2024]
 
 ### Summary
 This dissertation examines how Maksim Gor'kii (Maxim Gorky) and other Russo-Soviet writers attempted to translate the Orthodox Christian culture of the Russian Empire into a vision for a future secular socialist superpower. Initial literary success lead Gor'kii to great prominance among Lenin and other Bolsheviks, but Gor'kii's elaborately crafted "post-Christian" world was not realized in the Soviet Union. Nevertheless, consequential historical and conceptual developments as a result of this work remain to be explored. Through an examination of his and others' biblically-inspired literature, *A Revolutionary Gospel* attempts to show Gor'kii's ingenuity in bridging two worlds using humans' universal spiritual tendences and how shared narratives steer individual, social, ethical, and intellectual change of all kinds.

@@ -6,8 +6,6 @@ eleventyNavigation:
   parent: Research
   order: 2
 ---
-# {{ title }}
-___
 ## MAPRR's Purpose and Key Concepts
 
 From MAPRR's [website](https://maprr.iath.virginia.edu/): "In the cataclysmic nine years from 1914 to 1922, tsarist Russia disappeared from the map, fragmenting into regions, cities, and villages as an entire empire split into battle zones. This website helps us capture a shifting sense of self and attachment to a place through a database more than 600 poems and short prose composed during these war years by 70 writers."

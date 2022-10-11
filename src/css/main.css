@@ -123,10 +123,6 @@ video {
   /* color: gray; */
 }
 
-.hamburger {
-  display: none;
-}
-
 .bar {
   display: block;
   width: 25px;
@@ -159,14 +155,14 @@ video {
 }
 
 .nav-link:hover{
-  /* color: #482ff7; */
+  color: #482ff7;
   text-decoration: underline;
 }
 
 .nav-logo {
   font-size: 2.1rem;
-  font-weight: 500;
-  color: #482ff7;
+  font-weight: 300;
+  color: #00000000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -202,10 +198,12 @@ video {
   }
 
   .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
   }
-
+  
   .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
   }
 

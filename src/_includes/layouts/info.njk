@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: page 
+date: Last Modified
 ---
 
 <h1>{{ title }}</h1>
@@ -10,4 +11,4 @@ layout: page
 
 <hr>
 
-<i>Last modified: {{ page.date | dateFix }}</i>
+Last modified: {{ page.date.toDateString() }}

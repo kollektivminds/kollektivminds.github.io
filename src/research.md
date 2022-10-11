@@ -16,9 +16,9 @@ This dissertation examines how Maksim Gor'kii (Maxim Gorky) and other Russo-Sovi
 ### Chapters
 Introduction: "The Beginning at the End of the (Old) World"
 
-Chapter 1: "Athiest Answers to Religious Questions of Theodicy"
+Chapter 1: "Confronting Evil with Inverted Christian Narratives"
 
-Chapter 2: "Rebuilding God after 1905"
+Chapter 2: "Factories of Worship: Rebuilding God after 1905"
 
 Chapter 3: "The Socialist Synod of Bazarov, Gor’kii, and Lunacharskii"
 

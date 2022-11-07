@@ -15,6 +15,7 @@ img {
   border-radius: 10px; 
   width: auto;
   height: auto;
+  max-width: 80%;
 }
 
 li {
@@ -34,10 +35,11 @@ hr {
  * 
  * link styles 
  * 
- */
+*/
 
 header a {
   color: inherit;
+  text-decoration: none;
 }
 
 .main a {
@@ -51,12 +53,26 @@ footer a {
 
 /* 
  * 
+ * ID styles 
+ * 
+ */
+
+#indexDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+ * 
  * class styles 
  * 
  */
 
 .main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 3%;
   margin: auto;
   font-size: 18px;
@@ -90,9 +106,9 @@ video {
 
 /* Allow only vertical resizing of textareas. */
 
-/* textarea {
+textarea {
   resize: vertical;
-} */
+}
 
 /* 
  * 
@@ -112,6 +128,7 @@ video {
 
 .header{
   border-bottom: 1px solid #E2E8F0;
+  margin: 0% 3% 3% 3%;
 }
 
 .navbar {
@@ -121,6 +138,10 @@ video {
   padding: 1rem 1.5rem;
   /* background-color: whitesmoke; */
   /* color: gray; */
+}
+
+.hamburger {
+  display: none;
 }
 
 .bar {
@@ -140,36 +161,36 @@ video {
   list-style: none; 
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .nav-item {
-  margin-left: 2rem;
+  margin-left: 5rem;
   font-weight: 400;
   color: black;
 }
 
 .nav-link{
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .nav-link:hover{
-  color: #482ff7;
+  /* color: #482ff7; */
   text-decoration: underline;
 }
 
 .nav-logo {
-  font-size: 2.1rem;
-  font-weight: 300;
-  color: #00000000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .nav-menu {
       position: fixed;
       left: -100%;
-      top: 5rem;
+      top: 1rem;
       flex-direction: column;
       background-color: #fff;
       width: 100%;
@@ -181,7 +202,7 @@ video {
   }
 
   .nav-menu.active {
-      left: 0;
+    left: 0;
   }
 
   .nav-item {
@@ -189,8 +210,8 @@ video {
   }
 
   .hamburger {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
 
   .hamburger.active .bar:nth-child(2) {

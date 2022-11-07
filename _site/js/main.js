@@ -1,77 +1,27 @@
-/*
-$('[lang="es"]').hide();
-$('[lang="ru"]').hide();
-
-$('#lang-switch').change(function () {
-  var lang = $(this).val();
-  switch (lang) {
-    case 'en':
-      $('[lang]').hide();
-      $('[lang="en"]').show();
-      break;
-    case 'es':
-      $('[lang]').hide();
-      $('[lang="es"]').show();
-      break;
-    case 'ru':
-      $('[lang]').hide();
-      $('[lang="ru"]').show();
-      break;
-    default:
-      $('[lang]').hide();
-      $('[lang="en"]').show();
-  }
-});
-*/ 
-
-// const { copy } = require("fs-extra");
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
+const navLink = document.querySelectorAll(".nav-link");
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
 
-// click-to-keyboard for email addresses
-function clickCopy() {
-  // get text 
-  var copyText = "amt3ad@virginia.edu";
+document.querySelectorAll(".nav-link").forEach(n =>
+    n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
 
-  // select text 
-  copyText.select();
-  copyText.setSelectionRange(0, 9999); /* for mobiles */
-
-  // copy text 
-  navigator.clipboard.writeText(copyText.value);
-
-  // alert copies text 
-  alert("Copied " + copyText.value + " to clipboard");
-}
-
-/* Set the width of the side navigation to 200px and the left margin of the page content to 250px and add a black background color to body 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("main").style.marginLeft = "200px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-*/
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-}
-*/
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+hamburger.addEventListener("click", mobileMenu);

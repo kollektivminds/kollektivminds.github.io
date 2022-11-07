@@ -32,8 +32,8 @@ permalink: "/{{ page.filePathStem }}.html"
   <!-- icon stylesheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   
-  <script src="{{ 'js/main.js' | url }}"></script>
-  <script src="{{ 'js/plugins.js' | url }}"></script>
+  <script src="{{ 'js/main.js' | url }}" defer></script>
+  <script src="{{ 'js/plugins.js' | url }}" defer></script>
   
   <!-- <meta content="#fafafa" name="theme-color"> -->
 </head>
@@ -56,11 +56,11 @@ permalink: "/{{ page.filePathStem }}.html"
           <a href="/blog.html" class="nav-link">Blog</a>
         </li> -->
       </ul>
-      <button class="hamburger">
+      <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-      </button>
+      </div>
     </nav>
   </header>
 

@@ -1,0 +1,30 @@
+{
+    "home": {
+        "English": "Home",
+        "Russian": "Главная"
+    },
+    "cv": {
+        "English": "CV",
+        "Russian": "CV"
+    },
+    "research": {
+        "English": "Research",
+        "Russian": "Исследование"
+    },
+    "pedagogy": {
+        "English": "Pedagogy",
+        "Russian": "Педагогия"
+    },
+    "blog": {
+        "English": "Blog",
+        "Russian": "Блог"
+    },
+    "copyright": {
+        "English": "Aaron M. Thompson © 2022",
+        "Russian": "Aaron M. Thompson © 2022"
+    },
+    "attribution": {
+        "English": "Ty 2 <a href='https://11ty.dev'>11ty</a> 4 help building this site.",
+        "Russian": "Сайт построен с помощью <a href='https://11ty.dev'>11ty</a>"
+    }
+}

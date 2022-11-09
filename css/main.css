@@ -9,13 +9,13 @@ html {
   color: black;
 }
 
-img {
+/* img {
   vertical-align: center;
   align-items: center;
   width: auto;
   height: auto;
   max-width: 80%;
-}
+} */
 
 li {
   list-style: none;
@@ -90,6 +90,30 @@ footer a {
 .main img {
   margin: 1em;
   border-radius: 10px; 
+}
+
+.banner-container {
+  display:inline-block;
+  position: relative;
+  width: 100%;
+  max-height: 10rem;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.banner-text {
+  position: absolute;
+  text-align: center;
+  font-weight: bolder;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /* Remove the gap between media and the bottom of their containers */

@@ -7,6 +7,9 @@ eleventyNavigation:
 ---
 
 ## At the Moment
+
+<img alt="Me at UVA" src="/img/meatuva.jpg" title="Me at UVA" style="max-width:20rem;float:inline-start;"></img>
+
 Currently based out of Charlottesville, I am a PhD candidate in Slavic Languages & Literatures at the University of Virginia. My research focuses on the ways writing culture intersects with politics and religion in the 50 years leading up to the Russian revolution. I'm also interested in using new technological approaches to augment scholarly and pedagogical pursuits, including dabbling in the Digital Humanities and developing digital study materials for language learners.
 
 <img alt="Lev on New England Trip" src="/img/lev-travel.jpg" title="Lev Goes to New England" style="max-width:20rem;float:inline-end;"></img>

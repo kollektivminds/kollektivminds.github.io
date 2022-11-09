@@ -12,7 +12,6 @@ html {
 img {
   vertical-align: center;
   align-items: center;
-  border-radius: 10px; 
   width: auto;
   height: auto;
   max-width: 80%;
@@ -65,6 +64,13 @@ footer a {
   justify-content: center;
 }
 
+#banner {
+  display: block;
+  min-width: 100%;
+  max-height: 10rem;
+  
+}
+
 /* 
  * 
  * class styles 
@@ -83,6 +89,7 @@ footer a {
 
 .main img {
   margin: 1em;
+  border-radius: 10px; 
 }
 
 /* Remove the gap between media and the bottom of their containers */
@@ -165,7 +172,7 @@ textarea {
 }
 
 .nav-item {
-  margin-left: 5rem;
+  margin-left: 3rem;
   font-weight: 400;
   color: black;
 }
@@ -190,9 +197,10 @@ textarea {
   .nav-menu {
       position: fixed;
       left: -100%;
-      top: 1rem;
+      top: 0rem;
       flex-direction: column;
       background-color: #fff;
+      opacity: 0.8;
       width: 100%;
       border-radius: 10px;
       text-align: center;
@@ -206,7 +214,7 @@ textarea {
   }
 
   .nav-item {
-      margin: 2.5rem 0;
+      margin: 2.5rem 2.5rem;
   }
 
   .hamburger {

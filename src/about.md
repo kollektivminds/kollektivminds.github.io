@@ -20,4 +20,4 @@ Outside of work I enjoy cooking, photography, tinkering with free and open-sourc
 
 <img alt="Aaron in Kazakhstan" src="/img/kaz.jpg" title="Aaron in Kazakhstan" style="max-height:20rem;float:inline-start;display:inline-block;"></img>
 
-I am originally from southern Illinois and have lived in Arizona as well as Saudi Arabia and Kazakhstan. I received my Bachelor's degree from the University of Arizona in Russian and Anthropology. From 2015 to 2018 I lived in Almaty, Kazakhstan where I worked as an educator and consultant. Since 2012 I have lived with rheumatoid arthritis and fibromyalgia.
+I am originally from southern Illinois and have lived in Arizona as well as Saudi Arabia and Kazakhstan. I received my BA degrees from the University of Arizona in Russian and Anthropology. From 2015 to 2018 I lived in Almaty, Kazakhstan where I worked as an educator and consultant. Since 2012 I have lived with rheumatoid arthritis and fibromyalgia.

@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## Background 
 
-I take pride in my educational history at public elementary, secondary, and tertiary educational institutions. My approach to teaching is the product of dozens of public educators' underappreciated sweat and tears from whom I have learned pedagogy and so much more. As the result of many such privileges, a comprehensive and strong liberal-arts education has become both personally and professionally important to me. With all its faults, I stand by our educational system's ability to prepare our future global citizens, critical thinkers, and creative problem-solvers.
+I take pride in my educational history at public elementary, secondary, and tertiary educational institutions. My approach to teaching is the product of dozens of public educators from whom I have learned pedagogy and so much more. As the result of many such privileges, a comprehensive and strong liberal-arts education has become both personally and professionally important to me. With all its faults, I stand by our educational system's ability to properly prepare our future global citizens, critical thinkers, and creative problem-solvers.
 
 ## Teaching Philosophy
 
